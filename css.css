@@ -2,6 +2,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+
 }
 
 .float-left {
@@ -16,16 +18,22 @@
     clear: both;
 }
 
-/* welcome */
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #3a3a3a80;
 
-.welcome {
+}
+
+/* header */
+
+.header {
     min-height: 100vh;
     background-image: url(/images/header.jpeg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    /* background-color: black; */
 
 }
 
@@ -41,12 +49,12 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.welcome .logo {
+.header .logo {
     text-transform: capitalize;
     color: rgb(255, 48, 91);
 }
 
-.welcome .menu li {
+.header .menu li {
     list-style: none;
 
 }
@@ -56,6 +64,11 @@
     color: white;
     padding: 15px 10px;
 
+}
+
+.intro {
+    margin: auto;
+    text-align: center;
 }
 
 .hello-iam {
@@ -73,24 +86,28 @@
 
 /* animation */
 
-.welcome .intro {
+.header .intro {
+    font-family: "Source Sans 3", sans-serif;
     position: absolute;
     top: 40%;
     left: 35%;
     text-align: center;
+    margin: auto;
 }
 
 .animation {
     display: flex;
 
 }
-.animation .developer{
+
+.animation .developer {
     line-height: 30px;
     height: 30px;
     margin-left: 7px;
     overflow: hidden;
 
 }
+
 .developer li {
     color: white;
     text-transform: capitalize;
@@ -102,7 +119,7 @@
     text-align: left;
     top: 0;
     animation: slide 6s steps(2) infinite;
-    
+
 
 
 }
@@ -117,81 +134,145 @@
     background-size: cover;
     /* background-color: #4C4C4C; */
     animation: typing 3s steps(9) infinite;
-   
-} 
+
+}
 
 .professional {
     color: white;
     text-transform: capitalize;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 100;
 }
 
-@keyframes typing{
+#alex {
+    font-weight: 700;
+}
+
+@keyframes typing {
+
     40%,
-    60%{
+    60% {
         left: calc(100% + 30px);
     }
-    100%{
+
+    100% {
         left: 0;
     }
 }
+
 @keyframes slide {
-    100%{
-        top:-60px;
+    100% {
+        top: -60px;
     }
 }
+
 /* --------------------------------------------- */
-.layer .image{
+.blog {
+    background-color: red;
+    width: 80%;
+}
+
+.image {
     width: 50%;
-    height: 100vh;
-    border: #ff305b 4px;
-    position: absolute;
-    top: 100vh;
-    left: 5px;
-    /* background-color: #ff305b; */
+    padding: auto 0px;
 }
-.blog .content{
-    width: 40%;
+
+.image img {
+    width: 100%;
+    display: block;
 }
-.content{
+
+.blog .content {
+    width: 50%;
     color: rgb(76, 76, 76);
-    padding: 40px;
+    background-color: tomato;
 }
-.table{
+
+.table {
     border-top: dotted 2px #4c4c4c80;
     width: 100%;
     padding: 15px 0px;
     margin: 10px 0px;
 
 }
-.content h2{
+
+.content h2 {
     text-transform: uppercase;
     color: black;
 
 }
-.content h2 span{
+
+.content h2 span {
     color: #ff305b;
 }
-.content p{
+
+.content p {
     font-size: 20px;
     margin: 30px 0px;
 }
 
-td{
+td {
     width: 180px;
     padding: 5px 0px;
     text-transform: capitalize;
 }
-tr td span{
-    color: rgb(58, 57, 57);
+
+tr td span {
+    color: #3a3939;
     font-weight: 600;
 }
-.content button{
+
+.buttons {
+    margin: auto;
+    background-color: black;
+}
+
+.content button {
     background-color: #ff305b;
     border: 0px;
     height: 40px;
     width: 150px;
     color: white;
     font-size: 18px;
+
+}
+
+/* our services */
+.ourServices {
+    /* text-align: center; */
+    background-color: #F1F1F1;
+    padding: 50px 0px;
+
+}
+
+.ourServices h2 {
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: capitalize;
+    color: #242424;
+    margin: 20px 0px;
+}
+
+.contaners {
+    width: 90%;
+    margin: auto;
+}
+
+.services-container {
+    background-color: white;
+    float: left;
+    padding: 0px 10px;
+    width: 25%;
+}
+
+.services-container h3 {
+    color: #3a3939;
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.services-container p {
+    padding: 10px 0px;
 }
