@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css.css">
 </head>
 
@@ -46,13 +47,27 @@
             </div>
         </div>
     </div>
-    <div class="blog">
-        <div class="layer">
-            <div class="image float-left">
-                <img src="./images/work-7.jpg" alt="personal photo">
+    <div class="about">
+        <div class="about-image-general">
+            <div class="about-image-border">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="./images/work-7.jpg" alt="personal photo">
+                    </div>
+                    <div class="about-image-cover">
+                        <ul class="social-media-icons">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-google"></i></li>
+                            <li><i class="fa-brands fa-github"></i></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content float-left">
+
+        <div class="about-caption">
             <h2><span>i</span> hello,</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur ipsa necessitatibus
                 laudantium,
@@ -60,36 +75,32 @@
                 qui
                 accusantium asperiores dolorum atque! Omnis, vitae cupiditate eum minus nobis corporis assumenda culpa a
                 officiis nulla eos! Facilis maiores ad alias provident iure. </p>
-            <table class="table">
-                <tr>
-                    <td><span>name:</span> Rdam smith</td>
-                    <td><span>Job Title:</span> UI/UX Designer</td>
-                </tr>
-                <tr>
-                    <td><span>Age:</span> 26 Year</td>
-                    <td><span>Location:</span> United States, US</td>
-                </tr>
-                <tr>
-                    <td><span>Freelance:</span> Available</td>
-                    <td><span>E-mail:</span> example@gmail.com</td>
-                </tr>
-            </table>
-            <div class="buttons">
-                <button>Download CV</button>
-                <button>Hire Me</button>
+            <div class="about-list">
+                <p><span>name:</span> Rdam smith</p>
+                <p><span>Job Title:</span> UI/UX Designer</p>
+                <p><span>Age:</span> 26 Year</p>
+                <p><span>Location:</span> United States, US</p>
+                <p><span>Freelance:</span> Available</p>
+                <p><span>E-mail:</span> example@gmail.com</p>
+                <div class="clear"></div>
+            </div>
+            <div class="about-buttons">
+                <button>Download CV <i class="fa-solid fa-download"></i></button>
+                <button>Hire Me <i class="fa-solid fa-paper-plane"></i></button>
+                <div class="clear"></div>
             </div>
         </div>
         <div class="clear"></div>
     </div>
     <div class="ourServices">
         <div class="title">
-            <h2>our services</h2>
+            <h2 id="title">our services</h2>
             <div class="lines"></div>
         </div>
         <div class="contaners">
             <div class="services-container">
                 <div class="icon-image">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-pen-ruler"></i>
                 </div>
                 <h3>ui/ux design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ex.</p>
@@ -130,10 +141,59 @@
         <client-card></client-card>
     </div>
     <div class="our-blog">
-        <div class="card"></div>
+        <h2 id="title">our blog</h2>
+        <div class="cards">
+
+            <div class="inner-layout">
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/1 (1).jpg" alt="blog photo">
+                    </div>
+                    <div class="blog-content">
+                        <p class="date">23 November, 2015</p>
+                        <h3 class="blog-post">web design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequuntur ea, quis magnam
+                            deserunt eius incidunt repellat molestiae.</p>
+                        <button class="read-more">read more -></button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layout">
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/3 (1).jpg" alt="blog photo">
+                    </div>
+                    <div class="blog-content">
+                        <p class="date">23 November, 2015</p>
+                        <h3 class="blog-post">web design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequuntur ea, quis magnam
+                            deserunt eius incidunt repellat molestiae.</p>
+                        <button class="read-more">read more -></button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layout">
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/1 (1).jpg" alt="blog photo">
+                    </div>
+                    <div class="blog-content">
+                        <p class="date">23 November, 2015</p>
+                        <h3 class="blog-post">web design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequuntur ea, quis magnam
+                            deserunt eius incidunt repellat molestiae.</p>
+                        <button class="read-more">read more -></button>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </div>
     <div class="contact-us"></div>
-    <footer></footer>
+    <footer>
+        
+        <p>Copy Right 2018 © By <span>Theme-fair</span> All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>

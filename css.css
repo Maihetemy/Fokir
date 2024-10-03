@@ -25,6 +25,14 @@ body {
 
 }
 
+#title {
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: capitalize;
+    color: #242424;
+    margin: 20px 0px;
+}
+
 /* header */
 
 .header {
@@ -167,91 +175,152 @@ body {
 }
 
 /* --------------------------------------------- */
-.blog {
-    background-color: red;
+.about {
+    min-height: 100vh;
     width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+    color: #555;
 }
 
-.image {
-    width: 50%;
-    padding: auto 0px;
+.about-image-general {
+    float: left;
+    padding-right: 50px;
 }
 
-.image img {
-    width: 100%;
+.about-image-border {
+    border: #555 8px solid;
+    border-radius: 4px;
+
+}
+
+.about-image-container {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.about-image {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    /* overflow: hidden; */
+}
+
+.about-image img {
+    border-radius: 4px;
     display: block;
+
 }
 
-.blog .content {
-    width: 50%;
-    color: rgb(76, 76, 76);
-    background-color: tomato;
-}
-
-.table {
-    border-top: dotted 2px #4c4c4c80;
+.about-image-cover {
+    background-color: rgba(36, 36, 36, .5);
+    border-radius: 4px;
     width: 100%;
-    padding: 15px 0px;
-    margin: 10px 0px;
+    height: 100%;
+    position: absolute;
+    top: 105%;
+    left: 20px;
+    transition: top 1s;
+    /* text-align: center; */
+
 
 }
 
-.content h2 {
+.about-image-container:hover .about-image-cover {
+    top: 20px;
+
+}
+
+.social-media-icons {
+    text-align: center;
+    list-style: none;
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 200px 0px;
+
+}
+
+.social-media-icons li {
+    float: left;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+li:hover {
+color: #ff305b;
+}
+
+
+.about-caption {
+    width: 50%;
+    padding-left: 30px;
+    min-height: 80vh;
+    text-align: left;
+    float: left;
+}
+
+.about-caption h2 {
     text-transform: uppercase;
-    color: black;
-
+    color: #333;
+    margin: 10px 0px;
+    font: 600 34px/22px "Source Sans 3", sans-serif;
+    padding-bottom: 20px;
 }
 
-.content h2 span {
+.about-caption h2 span {
     color: #ff305b;
 }
 
-.content p {
-    font-size: 20px;
-    margin: 30px 0px;
+.about-caption p {
+    font: 16px/25px;
+    margin: 10px 0px;
 }
 
-td {
-    width: 180px;
+
+.about-list p {
+    width: 50%;
     padding: 5px 0px;
     text-transform: capitalize;
+    float: left;
 }
 
-tr td span {
+.about-list span {
     color: #3a3939;
     font-weight: 600;
 }
 
-.buttons {
-    margin: auto;
-    background-color: black;
-}
-
-.content button {
+.about-buttons button {
     background-color: #ff305b;
     border: 0px;
-    height: 40px;
-    width: 150px;
+    border-radius: 4px;
+    min-height: 45px;
+    min-width: 100px;
     color: white;
-    font-size: 18px;
-
+    line-height: 25px;
+    padding: 0px 24px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: .5s;
 }
 
+.about-buttons i {
+    padding: 0px 5px;
+}
+.about-buttons button:hover{
+    background-color: red;
+}
+
+/* --------------------------------------------------- */
 /* our services */
 .ourServices {
-    /* text-align: center; */
     background-color: #F1F1F1;
+    height: 90vh;
     padding: 50px 0px;
 
 }
 
-.ourServices h2 {
-    font-size: 40px;
-    font-family: "Source Sans 3", sans-serif;
-    text-transform: capitalize;
-    color: #242424;
-    margin: 20px 0px;
-}
+
 
 .contaners {
     width: 90%;
@@ -275,4 +344,84 @@ tr td span {
 
 .services-container p {
     padding: 10px 0px;
+}
+
+/* ------------------------------------------ */
+/* our-blog */
+#blog-title {
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: capitalize;
+    color: #242424;
+    margin: 20px 0px;
+}
+
+.our-blog {
+    background-color: #F1F1F1;
+}
+
+.cards {
+    /* background-color: tomato; */
+    width: 90%;
+    margin: auto;
+    /* background-color: #ff305b; */
+}
+
+.inner-layout {
+    width: 33.3333%;
+    /* background-color: #242424; */
+    padding: 20px;
+    float: left;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    text-align: left;
+    line-height: 25px;
+
+
+}
+
+.card .image {
+    width: 100%;
+}
+
+.card .image img {
+    width: 100%;
+    display: block;
+}
+
+.blog-content {
+    padding: 15px;
+    color: rgb(85, 85, 85);
+}
+
+/* .blog-content .date{
+    padding: 10px 0px;
+} */
+
+
+.read-more {
+    border: 0px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #242424;
+    padding: 10px 0px;
+
+
+}
+
+footer {
+    height: 25vh;
+    color: white;
+    background-color: #414141;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    color: #ff305b;
 }
