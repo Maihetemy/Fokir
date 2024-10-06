@@ -41,14 +41,18 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
+    /* position: relative; */
     /* background-color: black; */
 
 }
 
 .nav {
     height: 70px;
+    width: 100%;
     background-color: transparent;
     padding: 25px;
+    position: fixed;
+    z-index: 100;
 }
 
 .black-layer {
@@ -175,6 +179,7 @@ body {
 }
 
 /* --------------------------------------------- */
+/* about */
 .about {
     text-align: center;
     min-height: 100vh;
@@ -184,9 +189,10 @@ body {
     color: #555;
 }
 
-.about-image-general {
+.about-image-container {
     float: left;
     padding-right: 50px;
+    position: relative;
 }
 
 .about-image-border {
@@ -196,15 +202,10 @@ body {
 
 }
 
-.about-image-container {
-    position: relative;
-    overflow: hidden;
-
-
-}
 
 .about-image {
     position: relative;
+    overflow: hidden;
     top: 20px;
     left: 20px;
 }
@@ -221,34 +222,29 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 105%;
-    left: 20px;
+    top: 100%;
+    left: 0px;
     transition: top 1s;
-
-    /* text-align: center; */
-
-
+    padding: 200px 0px;
 }
 
 .about-image-container:hover .about-image-cover {
-    top: 20px;
+    top: 0px;
 
 }
 
 .social-media-icons {
     text-align: center;
     list-style: none;
-    color: white;
-    width: 50%;
-    margin: auto;
-    padding: 200px 0px;
-
+    display: inline-block;
+    
 }
 
 .social-media-icons li {
+    color: white;
     float: left;
     padding: 0px 10px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 li:hover {
@@ -293,7 +289,6 @@ li:hover {
     color: #3a3939;
     font-weight: 600;
 }
-
 .about-buttons button {
     background-color: #ff305b;
     border: 0px;
@@ -431,17 +426,82 @@ li:hover {
 
 
 }
+/* ---------------------------------------------- */
+/*our portfolio */
+.our-portfolio{
+    width: 90%;
+    margin: 50px auto;
+    min-height: 100vh;
+    text-align: center;
+}
+.our-portfolio h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #333;
+    padding: 30px 20px;
 
+
+}
+.portfolio-list{
+    text-align: center;
+}
+.portfolio-list ul{
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.portfolio-list li{
+    float: left;
+    padding: 10px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+.inner{
+    padding: 20px;
+    width: 33.3333%;
+    float: left;
+}
+.item-image{
+    position: relative;
+    overflow: hidden;
+}
+.item-image img{
+    width: 100%;
+    display: block;
+}
+.item-cover{
+    background-color: rgba(36, 36, 36, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+}
+.item-image:hover .item-cover{
+    top: 0;
+}
+
+/* ------------------------------------------------ */
+/* footer */
 footer {
-    height: 25vh;
+    min-height: 25vh;
     color: white;
     background-color: #414141;
     line-height: 25px;
-    display: flex;
+    text-align: center;
+    padding: 50px 0px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
-
+.footer-content{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
 footer span {
     color: #ff305b;
 }
