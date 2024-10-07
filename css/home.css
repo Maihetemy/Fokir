@@ -41,15 +41,14 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    /* position: relative; */
-    /* background-color: black; */
+    
 
 }
 
 .nav {
     height: 70px;
     width: 100%;
-    background-color: transparent;
+    background-color: #333;
     padding: 25px;
     position: fixed;
     z-index: 100;
@@ -237,7 +236,7 @@ body {
     text-align: center;
     list-style: none;
     display: inline-block;
-    
+
 }
 
 .social-media-icons li {
@@ -289,7 +288,8 @@ li:hover {
     color: #3a3939;
     font-weight: 600;
 }
-.about-buttons button {
+
+button {
     background-color: #ff305b;
     border: 0px;
     border-radius: 4px;
@@ -426,15 +426,17 @@ li:hover {
 
 
 }
+
 /* ---------------------------------------------- */
 /*our portfolio */
-.our-portfolio{
+.our-portfolio {
     width: 90%;
     margin: 50px auto;
     min-height: 100vh;
     text-align: center;
 }
-.our-portfolio h2{
+
+.our-portfolio h2 {
     text-transform: capitalize;
     font-size: 40px;
     font-weight: 800;
@@ -445,34 +447,41 @@ li:hover {
 
 
 }
-.portfolio-list{
+
+.portfolio-list {
     text-align: center;
 }
-.portfolio-list ul{
+
+.portfolio-list ul {
     list-style-type: none;
     display: inline-block;
-    
+
 }
-.portfolio-list li{
+
+.portfolio-list li {
     float: left;
     padding: 10px;
     text-transform: capitalize;
     margin-right: 20px;
 }
-.inner{
+
+.inner {
     padding: 20px;
     width: 33.3333%;
     float: left;
 }
-.item-image{
+
+.item-image {
     position: relative;
     overflow: hidden;
 }
-.item-image img{
+
+.item-image img {
     width: 100%;
     display: block;
 }
-.item-cover{
+
+.item-cover {
     background-color: rgba(36, 36, 36, 0.7);
     height: 100%;
     width: 100%;
@@ -480,8 +489,67 @@ li:hover {
     top: 100%;
     transition: 1s;
 }
-.item-image:hover .item-cover{
+
+.item-image:hover .item-cover {
     top: 0;
+}
+
+/* ------------------------------------------------ */
+/* contact us */
+.contact-us {
+    min-height: 100vh;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    margin: 16px 0px;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    margin-right: 16px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border-color: red;
+}
+
+::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.name-email-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name .email {
+    width: 45%;
+}
+
+textarea {
+    height: 200px;
+
+}
+.button-left{
+    text-align: left;
+    
+}
+.button-left button{
+text-transform: uppercase;  
+font-size: 16px;  
+
 }
 
 /* ------------------------------------------------ */
@@ -493,15 +561,14 @@ footer {
     line-height: 25px;
     text-align: center;
     padding: 50px 0px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
-.footer-content{
+
+.footer-content {
     width: 50%;
     text-align: center;
     margin: auto;
 }
+
 footer span {
     color: #ff305b;
 }
