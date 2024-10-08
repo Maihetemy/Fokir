@@ -1,4 +1,7 @@
 /* geniral */
+html {
+    scroll-behavior: smooth;
+  }
 * {
     padding: 0px;
     margin: 0px;
